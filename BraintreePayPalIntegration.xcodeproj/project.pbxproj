@@ -3,23 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		386A8B8F030FB09B341EAFA5 /* Pods_BraintreePayPalIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7676A7B8FA603BB109FA20 /* Pods_BraintreePayPalIntegration.framework */; };
 		421FF3AE25BB969A00222E17 /* BraintreePayPalIntegrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FF3AD25BB969A00222E17 /* BraintreePayPalIntegrationApp.swift */; };
 		421FF3B025BB969A00222E17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FF3AF25BB969A00222E17 /* ContentView.swift */; };
 		421FF3B225BB969B00222E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421FF3B125BB969B00222E17 /* Assets.xcassets */; };
 		421FF3B525BB969B00222E17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421FF3B425BB969B00222E17 /* Preview Assets.xcassets */; };
+		421FF3C625BB972400222E17 /* PayPalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FF3C525BB972400222E17 /* PayPalViewController.swift */; };
+		421FF3C925BB97E500222E17 /* PayPalDesign.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421FF3C825BB97E500222E17 /* PayPalDesign.storyboard */; };
+		421FF3CC25BB982100222E17 /* PayPalHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FF3CB25BB982100222E17 /* PayPalHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06D3371A096BB11426D9204D /* Pods-BraintreePayPalIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BraintreePayPalIntegration.release.xcconfig"; path = "Target Support Files/Pods-BraintreePayPalIntegration/Pods-BraintreePayPalIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		421FF3AA25BB969A00222E17 /* BraintreePayPalIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraintreePayPalIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		421FF3AD25BB969A00222E17 /* BraintreePayPalIntegrationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraintreePayPalIntegrationApp.swift; sourceTree = "<group>"; };
 		421FF3AF25BB969A00222E17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		421FF3B125BB969B00222E17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		421FF3B425BB969B00222E17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		421FF3B625BB969B00222E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		421FF3C525BB972400222E17 /* PayPalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalViewController.swift; sourceTree = "<group>"; };
+		421FF3C825BB97E500222E17 /* PayPalDesign.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayPalDesign.storyboard; sourceTree = "<group>"; };
+		421FF3CB25BB982100222E17 /* PayPalHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalHandler.swift; sourceTree = "<group>"; };
+		DB7676A7B8FA603BB109FA20 /* Pods_BraintreePayPalIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BraintreePayPalIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBFAF2EC8FE00E3809727DD /* Pods-BraintreePayPalIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BraintreePayPalIntegration.debug.xcconfig"; path = "Target Support Files/Pods-BraintreePayPalIntegration/Pods-BraintreePayPalIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386A8B8F030FB09B341EAFA5 /* Pods_BraintreePayPalIntegration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FD64072E83DFE280DA97057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB7676A7B8FA603BB109FA20 /* Pods_BraintreePayPalIntegration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		421FF3A125BB969A00222E17 = {
 			isa = PBXGroup;
 			children = (
 				421FF3AC25BB969A00222E17 /* BraintreePayPalIntegration */,
 				421FF3AB25BB969A00222E17 /* Products */,
+				F864B246BA58CFB3A0D59386 /* Pods */,
+				2FD64072E83DFE280DA97057 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +73,7 @@
 		421FF3AC25BB969A00222E17 /* BraintreePayPalIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				421FF3C225BB970E00222E17 /* PayPal */,
 				421FF3AD25BB969A00222E17 /* BraintreePayPalIntegrationApp.swift */,
 				421FF3AF25BB969A00222E17 /* ContentView.swift */,
 				421FF3B125BB969B00222E17 /* Assets.xcassets */,
@@ -69,6 +91,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		421FF3C225BB970E00222E17 /* PayPal */ = {
+			isa = PBXGroup;
+			children = (
+				421FF3C525BB972400222E17 /* PayPalViewController.swift */,
+				421FF3C825BB97E500222E17 /* PayPalDesign.storyboard */,
+				421FF3CB25BB982100222E17 /* PayPalHandler.swift */,
+			);
+			path = PayPal;
+			sourceTree = "<group>";
+		};
+		F864B246BA58CFB3A0D59386 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCBFAF2EC8FE00E3809727DD /* Pods-BraintreePayPalIntegration.debug.xcconfig */,
+				06D3371A096BB11426D9204D /* Pods-BraintreePayPalIntegration.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 421FF3B925BB969B00222E17 /* Build configuration list for PBXNativeTarget "BraintreePayPalIntegration" */;
 			buildPhases = (
+				C55C90E2B7FE7DBEA2787DE4 /* [CP] Check Pods Manifest.lock */,
 				421FF3A625BB969A00222E17 /* Sources */,
 				421FF3A725BB969A00222E17 /* Frameworks */,
 				421FF3A825BB969A00222E17 /* Resources */,
+				F2190F82D0347DA0BFC53D7E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +170,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				421FF3B525BB969B00222E17 /* Preview Assets.xcassets in Resources */,
+				421FF3C925BB97E500222E17 /* PayPalDesign.storyboard in Resources */,
 				421FF3B225BB969B00222E17 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C55C90E2B7FE7DBEA2787DE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BraintreePayPalIntegration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2190F82D0347DA0BFC53D7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BraintreePayPalIntegration/Pods-BraintreePayPalIntegration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BraintreePayPalIntegration/Pods-BraintreePayPalIntegration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BraintreePayPalIntegration/Pods-BraintreePayPalIntegration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		421FF3A625BB969A00222E17 /* Sources */ = {
@@ -139,7 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				421FF3B025BB969A00222E17 /* ContentView.swift in Sources */,
+				421FF3C625BB972400222E17 /* PayPalViewController.swift in Sources */,
 				421FF3AE25BB969A00222E17 /* BraintreePayPalIntegrationApp.swift in Sources */,
+				421FF3CC25BB982100222E17 /* PayPalHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +352,7 @@
 		};
 		421FF3BA25BB969B00222E17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBFAF2EC8FE00E3809727DD /* Pods-BraintreePayPalIntegration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +375,7 @@
 		};
 		421FF3BB25BB969B00222E17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D3371A096BB11426D9204D /* Pods-BraintreePayPalIntegration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

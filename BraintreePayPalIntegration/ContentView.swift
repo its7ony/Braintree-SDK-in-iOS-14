@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        PayPalHandler().frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
 }
 
